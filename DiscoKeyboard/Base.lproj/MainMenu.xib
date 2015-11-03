@@ -26,8 +26,14 @@
                         <action selector="menuClicked:" target="Voe-Tx-rLC" id="fNE-ZW-9bU"/>
                     </connections>
                 </menuItem>
+                <menuItem title="Quit" id="gpc-93-LLQ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitMenuItemClicked:" target="Voe-Tx-rLC" id="kEm-Fc-6aD"/>
+                    </connections>
+                </menuItem>
             </items>
-            <point key="canvasLocation" x="200" y="267.5"/>
+            <point key="canvasLocation" x="378" y="289.5"/>
         </menu>
     </objects>
 </document>

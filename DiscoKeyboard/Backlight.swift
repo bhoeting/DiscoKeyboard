@@ -46,15 +46,27 @@ class Backlight {
         off();
     }
     
+    func startFlashing(target: AnyObject, interval: Float64) {
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(
+            interval, target: target, selector: "toggle", userInfo: nil, repeats: true)
+        
+        // We need to add the timer to the mainRunLoop so it doesn't stop flashing when the menu is accessed
+        NSRunLoop.mainRunLoop().addTimer(self.timer, forMode: NSRunLoopCommonModes)
+        self.isFlashing = true
+    }
+    
+    func stopFlashing() {
+        self.isFlashing = false
+        self.timer.invalidate()
+    }
+    
     func toggleFlashing(target: AnyObject, interval: Float64) {
         if self.isFlashing {
             self.timer.invalidate()
         } else {
-            // The "toggle" selector refers to the toggle method in the target class, not this one
             self.timer = NSTimer.scheduledTimerWithTimeInterval(
                 interval, target: target, selector: "toggle", userInfo: nil, repeats: true)
             
-            // We need to add the timer to the mainRunLoop so it doesn't stop flashing when the menu is accessed
             NSRunLoop.mainRunLoop().addTimer(self.timer, forMode: NSRunLoopCommonModes)
         }
         
@@ -102,6 +114,7 @@ class Backlight {
         
         assert(status == KERN_SUCCESS, "Failed to set brightness; status: \(status)")
     }
+    
 }
 
 
