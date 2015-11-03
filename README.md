@@ -1,2 +1,2 @@
 # DiscoKeyboard
-Make your MBP keyboard flash!
+Make your MacBook keyboard flash!
