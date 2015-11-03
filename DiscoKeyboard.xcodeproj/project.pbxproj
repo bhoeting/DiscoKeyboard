@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		260FAECE1BE7EA1300166729 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260FAECD1BE7EA1300166729 /* Images.xcassets */; };
+		265848C61BE725020060EE37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265848C51BE725020060EE37 /* AppDelegate.swift */; };
+		265848CB1BE725020060EE37 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 265848C91BE725020060EE37 /* MainMenu.xib */; };
+		265848EF1BE72B310060EE37 /* Backlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265848EE1BE72B310060EE37 /* Backlight.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		265848D21BE725020060EE37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 265848BA1BE725020060EE37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 265848C11BE725020060EE37;
+			remoteInfo = KeyboardFlasher;
+		};
+		265848DD1BE725020060EE37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 265848BA1BE725020060EE37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 265848C11BE725020060EE37;
+			remoteInfo = KeyboardFlasher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		260FAECD1BE7EA1300166729 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		265848C21BE725020060EE37 /* DiscoKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscoKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		265848C51BE725020060EE37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		265848CA1BE725020060EE37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		265848CC1BE725020060EE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		265848D11BE725020060EE37 /* DiscoKeyboard.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscoKeyboard.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		265848DC1BE725020060EE37 /* DiscoKeyboard.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscoKeyboard.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		265848EE1BE72B310060EE37 /* Backlight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backlight.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		265848BF1BE725020060EE37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265848CE1BE725020060EE37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265848D91BE725020060EE37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		265848B91BE725020060EE37 = {
+			isa = PBXGroup;
+			children = (
+				265848C41BE725020060EE37 /* DiscoKeyboard */,
+				265848C31BE725020060EE37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		265848C31BE725020060EE37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				265848C21BE725020060EE37 /* DiscoKeyboard.app */,
+				265848D11BE725020060EE37 /* DiscoKeyboard.xctest */,
+				265848DC1BE725020060EE37 /* DiscoKeyboard.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		265848C41BE725020060EE37 /* DiscoKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				265848C51BE725020060EE37 /* AppDelegate.swift */,
+				265848C91BE725020060EE37 /* MainMenu.xib */,
+				265848CC1BE725020060EE37 /* Info.plist */,
+				265848EE1BE72B310060EE37 /* Backlight.swift */,
+				260FAECD1BE7EA1300166729 /* Images.xcassets */,
+			);
+			path = DiscoKeyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		265848C11BE725020060EE37 /* DiscoKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 265848E51BE725020060EE37 /* Build configuration list for PBXNativeTarget "DiscoKeyboard" */;
+			buildPhases = (
+				265848BE1BE725020060EE37 /* Sources */,
+				265848BF1BE725020060EE37 /* Frameworks */,
+				265848C01BE725020060EE37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiscoKeyboard;
+			productName = KeyboardFlasher;
+			productReference = 265848C21BE725020060EE37 /* DiscoKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		265848D01BE725020060EE37 /* DiscoKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 265848E81BE725020060EE37 /* Build configuration list for PBXNativeTarget "DiscoKeyboardTests" */;
+			buildPhases = (
+				265848CD1BE725020060EE37 /* Sources */,
+				265848CE1BE725020060EE37 /* Frameworks */,
+				265848CF1BE725020060EE37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				265848D31BE725020060EE37 /* PBXTargetDependency */,
+			);
+			name = DiscoKeyboardTests;
+			productName = KeyboardFlasherTests;
+			productReference = 265848D11BE725020060EE37 /* DiscoKeyboard.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		265848DB1BE725020060EE37 /* DiscoKeyboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 265848EB1BE725020060EE37 /* Build configuration list for PBXNativeTarget "DiscoKeyboardUITests" */;
+			buildPhases = (
+				265848D81BE725020060EE37 /* Sources */,
+				265848D91BE725020060EE37 /* Frameworks */,
+				265848DA1BE725020060EE37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				265848DE1BE725020060EE37 /* PBXTargetDependency */,
+			);
+			name = DiscoKeyboardUITests;
+			productName = KeyboardFlasherUITests;
+			productReference = 265848DC1BE725020060EE37 /* DiscoKeyboard.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		265848BA1BE725020060EE37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Brennan Hoeting";
+				TargetAttributes = {
+					265848C11BE725020060EE37 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					265848D01BE725020060EE37 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 265848C11BE725020060EE37;
+					};
+					265848DB1BE725020060EE37 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 265848C11BE725020060EE37;
+					};
+				};
+			};
+			buildConfigurationList = 265848BD1BE725020060EE37 /* Build configuration list for PBXProject "DiscoKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 265848B91BE725020060EE37;
+			productRefGroup = 265848C31BE725020060EE37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				265848C11BE725020060EE37 /* DiscoKeyboard */,
+				265848D01BE725020060EE37 /* DiscoKeyboardTests */,
+				265848DB1BE725020060EE37 /* DiscoKeyboardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		265848C01BE725020060EE37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265848CB1BE725020060EE37 /* MainMenu.xib in Resources */,
+				260FAECE1BE7EA1300166729 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265848CF1BE725020060EE37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265848DA1BE725020060EE37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		265848BE1BE725020060EE37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265848C61BE725020060EE37 /* AppDelegate.swift in Sources */,
+				265848EF1BE72B310060EE37 /* Backlight.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265848CD1BE725020060EE37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265848D81BE725020060EE37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		265848D31BE725020060EE37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 265848C11BE725020060EE37 /* DiscoKeyboard */;
+			targetProxy = 265848D21BE725020060EE37 /* PBXContainerItemProxy */;
+		};
+		265848DE1BE725020060EE37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 265848C11BE725020060EE37 /* DiscoKeyboard */;
+			targetProxy = 265848DD1BE725020060EE37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		265848C91BE725020060EE37 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				265848CA1BE725020060EE37 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		265848E31BE725020060EE37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		265848E41BE725020060EE37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		265848E61BE725020060EE37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/DiscoKeyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhoeting.DiscoKeyboard;
+				PRODUCT_NAME = DiscoKeyboard;
+			};
+			name = Debug;
+		};
+		265848E71BE725020060EE37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/DiscoKeyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhoeting.DiscoKeyboard;
+				PRODUCT_NAME = DiscoKeyboard;
+			};
+			name = Release;
+		};
+		265848E91BE725020060EE37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeyboardFlasherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhoeting.KeyboardFlasherTests;
+				PRODUCT_NAME = DiscoKeyboard;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiscoKeyboard.app/Contents/MacOS/DiscoKeyboard";
+			};
+			name = Debug;
+		};
+		265848EA1BE725020060EE37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeyboardFlasherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhoeting.KeyboardFlasherTests;
+				PRODUCT_NAME = DiscoKeyboard;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiscoKeyboard.app/Contents/MacOS/DiscoKeyboard";
+			};
+			name = Release;
+		};
+		265848EC1BE725020060EE37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeyboardFlasherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhoeting.KeyboardFlasherUITests;
+				PRODUCT_NAME = DiscoKeyboard;
+				TEST_TARGET_NAME = KeyboardFlasher;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		265848ED1BE725020060EE37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeyboardFlasherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhoeting.KeyboardFlasherUITests;
+				PRODUCT_NAME = DiscoKeyboard;
+				TEST_TARGET_NAME = KeyboardFlasher;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		265848BD1BE725020060EE37 /* Build configuration list for PBXProject "DiscoKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265848E31BE725020060EE37 /* Debug */,
+				265848E41BE725020060EE37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		265848E51BE725020060EE37 /* Build configuration list for PBXNativeTarget "DiscoKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265848E61BE725020060EE37 /* Debug */,
+				265848E71BE725020060EE37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		265848E81BE725020060EE37 /* Build configuration list for PBXNativeTarget "DiscoKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265848E91BE725020060EE37 /* Debug */,
+				265848EA1BE725020060EE37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		265848EB1BE725020060EE37 /* Build configuration list for PBXNativeTarget "DiscoKeyboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265848EC1BE725020060EE37 /* Debug */,
+				265848ED1BE725020060EE37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 265848BA1BE725020060EE37 /* Project object */;
+}
