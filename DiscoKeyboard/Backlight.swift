@@ -74,10 +74,28 @@ class Backlight {
     }
     
     func flashOnce(target: AnyObject, interval: Float64) {
-        self.isFlashingOnce = true
-        self.numberOfToggles = 0
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(
-            interval, target: target, selector: "toggle", userInfo: nil, repeats: true)
+//        self.isFlashingOnce = true
+//        self.numberOfToggles = 0
+//        self.timer = NSTimer.scheduledTimerWithTimeInterval(
+//            interval, target: target, selector: "toggle", userInfo: nil, repeats: true)
+        
+        var flag = 0;
+        self.toggle()
+        var delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(Backlight.MediumFlashingInterval * Double(NSEC_PER_SEC)))
+        dispatch_after(delayTime, dispatch_get_main_queue()) {
+            self.toggle()
+
+        }
+        
+        delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(2 * Backlight.MediumFlashingInterval * Double(NSEC_PER_SEC)))
+        dispatch_after(delayTime, dispatch_get_main_queue()) {
+            self.toggle()
+            flag = 1
+        }
+        
+        while flag != 1 {
+            
+        }
     }
     
     func toggle() {
@@ -87,7 +105,7 @@ class Backlight {
             self.on();
         }
         
-        if ++self.numberOfToggles >= 3 && isFlashingOnce {
+        if ++self.numberOfToggles >= 2 && isFlashingOnce {
             self.timer.invalidate()
             isFlashingOnce = false
         }
