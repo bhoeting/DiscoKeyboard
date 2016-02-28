@@ -1,9 +1,3 @@
-
-//
-// Brennan Hoeting 2015
-// Oxford, OH
-//
-
 import Cocoa
 import IOKit
 
