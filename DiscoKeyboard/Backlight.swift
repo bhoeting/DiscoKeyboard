@@ -1,19 +1,19 @@
 import Foundation
 
 class Backlight {
-    private var isOn = false;
-    private var isFlashing = false;
-    private var numberOfToggles = 0;
-    private var isFlashingOnce = false;
-    private var connect: mach_port_t = 0;
+    private var isOn = false
+    private var isFlashing = false
+    private var numberOfToggles = 0
+    private var isFlashingOnce = false
+    private var connect: mach_port_t = 0
     private var timer:NSTimer = NSTimer()
     
     static var sharedBacklight = Backlight()
-    static let FastFlashingInterval = 0.02;
-    static let MediumFlashingInterval = 0.06;
-    static let SlowFlashingInterval = 0.1;
-    static let MinBrightness:UInt64 = 0x0;
-    static let MaxBrightness:UInt64 = 0xfff;
+    static let FastFlashingInterval = 0.02
+    static let MediumFlashingInterval = 0.06
+    static let SlowFlashingInterval = 0.1
+    static let MinBrightness:UInt64 = 0x0
+    static let MaxBrightness:UInt64 = 0xfff
     
     init() {
         // Get the AppleLMUController (thing that accesses the light hardware)
@@ -58,13 +58,13 @@ class Backlight {
     }
     
     func on() {
-        set(Backlight.MaxBrightness);
-        isOn = true;
+        set(Backlight.MaxBrightness)
+        isOn = true
     }
     
     func off() {
-        set(Backlight.MinBrightness);
-        isOn = false;
+        set(Backlight.MinBrightness)
+        isOn = false
     }
     
     func set(brightness: UInt64) {
