@@ -1,28 +1,17 @@
 import Foundation
 
 class Backlight {
-   
-    // Flags
     private var isOn = false;
     private var isFlashing = false;
     private var numberOfToggles = 0;
     private var isFlashingOnce = false;
-    
-    // Hardware thing
     private var connect: mach_port_t = 0;
-    
-    // Timer for flashing
     private var timer:NSTimer = NSTimer()
     
-    // Shared instance
     static var sharedBacklight = Backlight()
-    
-    // Flashing intervals
     static let FastFlashingInterval = 0.02;
     static let MediumFlashingInterval = 0.06;
     static let SlowFlashingInterval = 0.1;
-    
-    // Brightness levels
     static let MinBrightness:UInt64 = 0x0;
     static let MaxBrightness:UInt64 = 0xfff;
     
@@ -40,9 +29,9 @@ class Backlight {
         off();
     }
     
-    func startFlashing(target: AnyObject, interval: Float64) {
+    func startFlashing(target: AnyObject, interval: Float64, selector: Selector) {
         self.timer = NSTimer.scheduledTimerWithTimeInterval(
-            interval, target: target, selector: "toggle", userInfo: nil, repeats: true)
+            interval, target: target, selector: selector, userInfo: nil, repeats: true)
         
         // We need to add the timer to the mainRunLoop so it doesn't stop flashing when the menu is accessed
         NSRunLoop.mainRunLoop().addTimer(self.timer, forMode: NSRunLoopCommonModes)
@@ -54,26 +43,6 @@ class Backlight {
         self.timer.invalidate()
     }
     
-    func toggleFlashing(target: AnyObject, interval: Float64) {
-        if self.isFlashing {
-            self.timer.invalidate()
-        } else {
-            self.timer = NSTimer.scheduledTimerWithTimeInterval(
-                interval, target: target, selector: "toggle", userInfo: nil, repeats: true)
-            
-            NSRunLoop.mainRunLoop().addTimer(self.timer, forMode: NSRunLoopCommonModes)
-        }
-        
-        self.isFlashing = !self.isFlashing
-    }
-    
-    func flashOnce(target: AnyObject, interval: Float64) {
-        self.isFlashingOnce = true
-        self.numberOfToggles = 0
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(
-            interval, target: target, selector: "toggle", userInfo: nil, repeats: true)
-    }
-    
     func toggle() {
         if self.isOn {
             self.off();
@@ -81,7 +50,8 @@ class Backlight {
             self.on();
         }
         
-        if ++self.numberOfToggles >= 3 && isFlashingOnce {
+        self.numberOfToggles += 1
+        if self.numberOfToggles >= 3 && isFlashingOnce {
             self.timer.invalidate()
             isFlashingOnce = false
         }
@@ -110,5 +80,3 @@ class Backlight {
     }
     
 }
-
-

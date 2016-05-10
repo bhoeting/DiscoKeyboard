@@ -22,7 +22,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         } else {
             sender.title = "Stop"
             sender.state = NSOnState
-            Backlight.sharedBacklight.startFlashing(self, interval: Backlight.MediumFlashingInterval)
+            Backlight.sharedBacklight.startFlashing(
+                self, interval: Backlight.MediumFlashingInterval, selector: #selector(AppDelegate.toggle))
         }
     }
     
