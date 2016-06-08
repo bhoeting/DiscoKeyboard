@@ -87,8 +87,8 @@
 		265848C41BE725020060EE37 /* DiscoKeyboard */ = {
 			isa = PBXGroup;
 			children = (
-				265848C51BE725020060EE37 /* AppDelegate.swift */,
 				265848C91BE725020060EE37 /* MainMenu.xib */,
+				265848C51BE725020060EE37 /* AppDelegate.swift */,
 				265848CC1BE725020060EE37 /* Info.plist */,
 				265848EE1BE72B310060EE37 /* Backlight.swift */,
 				260FAECD1BE7EA1300166729 /* Images.xcassets */,
