@@ -3,6 +3,10 @@ import IOKit
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+    @IBAction func Info(sender: AnyObject) {
+        
+        print("dd")
+    }
     
     @IBOutlet weak var statusMenu: NSMenu!
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)

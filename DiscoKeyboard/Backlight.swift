@@ -11,7 +11,7 @@ class Backlight {
     static var sharedBacklight = Backlight()
     static let FastFlashingInterval = 0.02
     static let MediumFlashingInterval = 0.06
-    static let SlowFlashingInterval = 0.1
+    static let SlowFlashingInterval = 0.2
     static let MinBrightness:UInt64 = 0x0
     static let MaxBrightness:UInt64 = 0xfff
     
