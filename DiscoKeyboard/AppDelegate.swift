@@ -5,6 +5,7 @@ import IOKit
 class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func Info(sender: AnyObject) {
         
+        print("dd")
     }
     
     @IBOutlet weak var statusMenu: NSMenu!
