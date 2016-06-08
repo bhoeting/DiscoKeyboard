@@ -3,9 +3,10 @@ import IOKit
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-    @IBAction func Info(sender: AnyObject) {
-        
-        print("dd")
+    
+    
+    @IBAction func GotoGithub(sender: AnyObject) {
+        NSWorkspace.sharedWorkspace().openURL(NSURL(string: "https://github.com/bhoeting/DiscoKeyboard")!)
     }
     
     @IBOutlet weak var statusMenu: NSMenu!
