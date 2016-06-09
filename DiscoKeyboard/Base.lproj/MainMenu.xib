@@ -32,6 +32,7 @@
                         <action selector="quitMenuItemClicked:" target="Voe-Tx-rLC" id="TTn-AB-p3r"/>
                     </connections>
                 </menuItem>
+                <menuItem isSeparatorItem="YES" id="Afy-As-glm"/>
                 <menuItem title="About" id="100-sh-6sF">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
