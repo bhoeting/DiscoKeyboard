@@ -12,6 +12,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var statusMenu: NSMenu!
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
     
+    @IBAction func BrightSlider(sender: AnyObject) {
+        print(sender.intValue);
+        
+        let brightValue = sender.floatValue
+    }
     @IBAction func menuClicked(sender: NSMenuItem) {
         if sender.state == NSOnState {
             sender.title = "Start"
