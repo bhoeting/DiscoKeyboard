@@ -5,6 +5,7 @@ import IOKit
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     
+    
     @IBAction func GotoGithub(sender: AnyObject) {
         NSWorkspace.sharedWorkspace().openURL(NSURL(string: "https://github.com/bhoeting/DiscoKeyboard")!)
     }
@@ -13,10 +14,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
     
     @IBAction func BrightSlider(sender: AnyObject) {
-        print(sender.intValue);
+        var st = NSString(format:"%3X", sender.intValue * 16)
+        print(st)
         
-        let brightValue = sender.floatValue
+        
     }
+    
     @IBAction func menuClicked(sender: NSMenuItem) {
         if sender.state == NSOnState {
             sender.title = "Start"

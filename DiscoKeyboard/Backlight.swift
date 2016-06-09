@@ -13,7 +13,7 @@ class Backlight {
     static let MediumFlashingInterval = 0.06
     static let SlowFlashingInterval = 0.2
     static let MinBrightness:UInt64 = 0x0
-    static let MaxBrightness:UInt64 = 0xfff
+    static let MaxBrightness:UInt64 = 0x888
     
     init() {
         // Get the AppleLMUController (thing that accesses the light hardware)
@@ -26,8 +26,10 @@ class Backlight {
         assert(status == KERN_SUCCESS, "Failed to open IO service")
         
         // Start with the backlight off
-        off();
+        on();
     }
+    
+    
     
     func startFlashing(target: AnyObject, interval: Float64, selector: Selector) {
         self.timer = NSTimer.scheduledTimerWithTimeInterval(
@@ -78,5 +80,7 @@ class Backlight {
         
         assert(status == KERN_SUCCESS, "Failed to set brightness; status: \(status)")
     }
+    
+    
     
 }
