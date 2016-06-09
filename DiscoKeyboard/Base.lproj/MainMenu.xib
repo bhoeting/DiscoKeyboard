@@ -29,7 +29,7 @@
                 <menuItem title="Quit" id="gpc-93-LLQ">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="menuClicked:" target="Voe-Tx-rLC" id="BX5-X1-M4H"/>
+                        <action selector="quitMenuItemClicked:" target="Voe-Tx-rLC" id="TTn-AB-p3r"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Info" id="100-sh-6sF">
