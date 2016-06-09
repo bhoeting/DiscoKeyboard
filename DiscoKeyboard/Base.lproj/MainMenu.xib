@@ -32,7 +32,7 @@
                         <action selector="quitMenuItemClicked:" target="Voe-Tx-rLC" id="TTn-AB-p3r"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Info" id="100-sh-6sF">
+                <menuItem title="About" id="100-sh-6sF">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="deminiaturize:" target="kd0-EO-lAa" id="vSX-Yp-ouG"/>
