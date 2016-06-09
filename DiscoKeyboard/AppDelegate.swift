@@ -4,6 +4,11 @@ import IOKit
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
+    
+    @IBAction func GotoGithub(sender: AnyObject) {
+        NSWorkspace.sharedWorkspace().openURL(NSURL(string: "https://github.com/bhoeting/DiscoKeyboard")!)
+    }
+    
     @IBOutlet weak var statusMenu: NSMenu!
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
     
