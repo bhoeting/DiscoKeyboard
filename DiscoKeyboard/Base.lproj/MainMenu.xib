@@ -14,6 +14,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="DiscoKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="slider" destination="u7I-O3-5Ca" id="i8m-Xb-RYj"/>
                 <outlet property="statusMenu" destination="dye-43-2Ks" id="Etu-up-0pb"/>
             </connections>
         </customObject>
@@ -94,9 +95,9 @@
             <subviews>
                 <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u7I-O3-5Ca">
                     <rect key="frame" x="1" y="-2" width="120" height="20"/>
-                    <sliderCell key="cell" alignment="left" maxValue="255" doubleValue="255" tickMarkPosition="above" sliderType="linear" id="jxM-1f-DMf"/>
+                    <sliderCell key="cell" state="on" alignment="left" maxValue="255" doubleValue="255" tickMarkPosition="above" sliderType="linear" id="jxM-1f-DMf" userLabel="brightSlider"/>
                     <connections>
-                        <action selector="BrightSlider:" target="Voe-Tx-rLC" id="mG8-PK-a6f"/>
+                        <action selector="changeVal:" target="Voe-Tx-rLC" id="GEx-sz-3Vl"/>
                     </connections>
                 </slider>
             </subviews>

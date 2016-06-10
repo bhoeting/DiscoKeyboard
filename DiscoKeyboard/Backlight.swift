@@ -13,7 +13,9 @@ class Backlight {
     static let MediumFlashingInterval = 0.06
     static let SlowFlashingInterval = 0.2
     static let MinBrightness:UInt64 = 0x0
-    static let MaxBrightness:UInt64 = 0x888
+    static var MaxBrightness:UInt64 = 0xfff
+    
+    
     
     init() {
         // Get the AppleLMUController (thing that accesses the light hardware)
@@ -81,6 +83,8 @@ class Backlight {
         assert(status == KERN_SUCCESS, "Failed to set brightness; status: \(status)")
     }
     
-    
+    func printe(vale: Int32) {
+        Backlight.MaxBrightness = UInt64(vale * 16)
+    }
     
 }

@@ -11,15 +11,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @IBOutlet weak var statusMenu: NSMenu!
+    
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
     
-    @IBAction func BrightSlider(sender: AnyObject) {
-        var st = NSString(format:"%3X", sender.intValue * 16)
-        print(st)
-        
-        
-    }
+    @IBOutlet weak var Slider: NSSlider!
     
+    @IBAction func changeVal(sender: AnyObject) {
+         Backlight.sharedBacklight.printe(sender.intValue)
+    }
     @IBAction func menuClicked(sender: NSMenuItem) {
         if sender.state == NSOnState {
             sender.title = "Start"
