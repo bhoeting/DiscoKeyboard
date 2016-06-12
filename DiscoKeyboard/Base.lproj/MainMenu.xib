@@ -14,6 +14,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="DiscoKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="slider" destination="u7I-O3-5Ca" id="i8m-Xb-RYj"/>
                 <outlet property="statusMenu" destination="dye-43-2Ks" id="Etu-up-0pb"/>
             </connections>
         </customObject>
@@ -26,27 +27,35 @@
                         <action selector="menuClicked:" target="Voe-Tx-rLC" id="fNE-ZW-9bU"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Quit" id="gpc-93-LLQ">
+                <menuItem title="Brightness" id="Skp-XX-GrI">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="menuClicked:" target="Voe-Tx-rLC" id="BX5-X1-M4H"/>
+                        <outlet property="view" destination="oZG-gL-ahc" id="wcp-bV-8YY"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Info" id="100-sh-6sF">
+                <menuItem isSeparatorItem="YES" id="Afy-As-glm"/>
+                <menuItem title="About" id="100-sh-6sF">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="deminiaturize:" target="kd0-EO-lAa" id="vSX-Yp-ouG"/>
                     </connections>
                 </menuItem>
+                <menuItem title="Quit" id="gpc-93-LLQ">
+                    <attributedString key="attributedTitle"/>
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitMenuItemClicked:" target="Voe-Tx-rLC" id="TTn-AB-p3r"/>
+                    </connections>
+                </menuItem>
             </items>
-            <point key="canvasLocation" x="420" y="289.5"/>
+            <point key="canvasLocation" x="423" y="201.5"/>
         </menu>
-        <window title="About Us" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="kd0-EO-lAa" customClass="NSPanel">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES"/>
+        <window title="About Us" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="alertPanel" frameAutosaveName="" id="kd0-EO-lAa" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="607" y="680" width="461" height="244"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
-            <view key="contentView" id="vnC-DK-6IE">
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <view key="contentView" focusRingType="exterior" id="vnC-DK-6IE">
                 <rect key="frame" x="0.0" y="0.0" width="461" height="244"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -78,7 +87,21 @@
                     </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="385.5" y="501"/>
+            <point key="canvasLocation" x="424.5" y="543"/>
         </window>
+        <customView id="oZG-gL-ahc">
+            <rect key="frame" x="0.0" y="0.0" width="122" height="16"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u7I-O3-5Ca">
+                    <rect key="frame" x="1" y="-2" width="120" height="20"/>
+                    <sliderCell key="cell" state="on" alignment="left" maxValue="255" doubleValue="255" tickMarkPosition="above" sliderType="linear" id="jxM-1f-DMf" userLabel="brightSlider"/>
+                    <connections>
+                        <action selector="changeVal:" target="Voe-Tx-rLC" id="GEx-sz-3Vl"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <point key="canvasLocation" x="423" y="308"/>
+        </customView>
     </objects>
 </document>

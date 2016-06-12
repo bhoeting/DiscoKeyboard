@@ -5,13 +5,20 @@ import IOKit
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     
+    
     @IBAction func GotoGithub(sender: AnyObject) {
         NSWorkspace.sharedWorkspace().openURL(NSURL(string: "https://github.com/bhoeting/DiscoKeyboard")!)
     }
     
     @IBOutlet weak var statusMenu: NSMenu!
+    
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
     
+    @IBOutlet weak var Slider: NSSlider!
+    
+    @IBAction func changeVal(sender: AnyObject) {
+         Backlight.sharedBacklight.printe(sender.intValue)
+    }
     @IBAction func menuClicked(sender: NSMenuItem) {
         if sender.state == NSOnState {
             sender.title = "Start"
